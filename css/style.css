@@ -1,0 +1,157 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: georgia,'times new roman',times,serif;
+  font-size: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+a{
+  display: block;
+  color: #2c7d61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #932a29;
+}
+
+nav ul {
+  list-style-type: none;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 0.72em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0;
+  margin: 0.3rem 0;
+  display: inline-block;
+  text-align: center;
+}
+nav li {
+  float: left;
+  padding: 0 1.25rem;
+  line-height: 0.75rem;
+  height: 0.75rem;
+  margin: 0.2rem 0; }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  color: #333;
+  line-height: 1em;
+}
+
+h2{
+  margin: 0;
+}
+
+/* Header Container */
+.header-container{
+  display: grid;
+  grid-template-rows: 2fr minmax(100px,300px) max-content 1fr;
+  justify-items: center;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.header-container img{
+  align-self: center;
+  grid-row: 2;
+  height: 100%;
+}
+
+.header-container h1{
+    align-self: center;
+  grid-row: 3;
+}
+
+@media (max-height: 980px) {
+  .header-container{
+    height: 100vh;
+  }
+}
+
+/* Sticky Header Container */
+.sticky-header-container{
+  height: auto;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  justify-items: center;
+}
+
+.sticky-header-container ul{
+  align-self: center;
+}
+
+/* Main-Container */
+.mc{
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 150px 1fr;
+}
+
+.banner{
+  height: 150px;
+  grid-column: span 3;
+  background-color: red;
+}
+
+.shop{
+  height: 100%;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.shop-nav{
+  grid-column: 1;
+  background-color: white;
+}
+
+.shop-container{
+  margin: 1em;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 1rem;
+}
+
+.item{
+  background-color: white;
+  border-radius: 1em;
+  color: #333;
+}
+
+.item>img{
+  width: 100%;
+}
+
+.item>button{
+  margin: 5px;
+}
+
+.fc{
+  height: 40vh;
+  background-color: #fff;
+}
+
+.fc button{
+  background: #333;
+  border: 0.25rem solid #fff;
+  border-radius: 1rem;
+  color: white;
+}
+
+.fc a{
+  padding: 0.20rem 0;
+}
